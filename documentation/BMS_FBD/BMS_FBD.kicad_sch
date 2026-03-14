@@ -1,0 +1,3908 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "233eb9a0-481f-49b4-bb61-c69ab2cc3021")
+	(paper "A4")
+	(title_block
+		(title "BMS Functional Block Diagram")
+		(date "2026-03-13")
+		(rev "0")
+		(company "University of Utah")
+		(comment 1 "Hayley Tankersley")
+		(comment 2 "Nathan Reusch")
+		(comment 3 "William Phillips")
+		(comment 4 "William Hurst")
+	)
+	(lib_symbols
+		(symbol "BMS_FBD:BatteryModule"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Battery Module"
+				(at 7.366 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BatteryModule_0_1"
+				(rectangle
+					(start 0 0)
+					(end 15.24 7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BatteryModule_1_1"
+				(pin bidirectional line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "CellTaps"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "TempSensors"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:CellMonitor&Balancing"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Cell Monitoring & Balancing"
+				(at 13.208 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CellMonitor&Balancing_0_1"
+				(rectangle
+					(start 0 0)
+					(end 26.67 10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CellMonitor&Balancing_1_1"
+				(pin bidirectional line
+					(at -2.54 7.62 0)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 3.81 0)
+					(length 2.54)
+					(name "Communication"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 29.21 3.81 180)
+					(length 2.54)
+					(name "CellTaps"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:Contactors"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Contactors"
+				(at 7.366 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Contactors_0_1"
+				(rectangle
+					(start 0 0)
+					(end 15.24 7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Contactors_1_1"
+				(pin input line
+					(at 17.78 6.35 180)
+					(length 2.54)
+					(name "Precharge"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 3.81 180)
+					(length 2.54)
+					(name "HV+Contactor"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 1.27 180)
+					(length 2.54)
+					(name "HV-Contactor"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:CurrentSensor"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Current Sensor"
+				(at 8.636 8.636 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CurrentSensor_0_1"
+				(rectangle
+					(start 0 0)
+					(end 17.78 7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CurrentSensor_1_1"
+				(pin output line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "Communication"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:Display"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Display"
+				(at 7.366 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Display_0_1"
+				(rectangle
+					(start 0 0)
+					(end 16.51 7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Display_1_1"
+				(pin power_in line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "Communication"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:IsolatedCANTransducer"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Isolated CAN Transducer"
+				(at 7.366 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "IsolatedCANTransducer_0_1"
+				(rectangle
+					(start 0 10.16)
+					(end 15.24 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "IsolatedCANTransducer_1_1"
+				(pin power_in line
+					(at -2.54 7.62 0)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "CAN_H"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "CAN_L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 7.62 180)
+					(length 2.54)
+					(name "ISO_Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:IsolatedPowerDistribution"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Isolated Power Distribution"
+				(at 7.62 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "IsolatedPowerDistribution_0_1"
+				(rectangle
+					(start 0 0)
+					(end 16.51 7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "IsolatedPowerDistribution_1_1"
+				(pin input line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 19.05 5.08 180)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 19.05 2.54 180)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:MasterSoftware"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 0.762 -81.28 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Master Software"
+				(at 35.814 -81.28 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MasterSoftware_0_1"
+				(rectangle
+					(start 0 0)
+					(end 69.85 -80.01)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MasterSoftware_1_1"
+				(text "Data from slaves:\n min/max/average/total voltage per module\n min/max/average temperature per module\n voltage/temperature faults\nCommands to slaves:\n Begin cell balancing\n Alter all settings\n Emergency discharge (multi-command?)\nProcess data:\n min/max/average/total pack voltage\n  - optional sensor to read full pack voltage, compare to calculated\n min/max/average pack temperature\n\nDrive mode:\n DriveEn present\n No hard voltage/temperature faults\n Command vehicle to reduce limits if soft voltage/temperature fault\n Handle precharge and contactor closing\n  - Enable precharge and HV- (option to switch to HV+)\n  - When external message and total pack voltage are within\n       threshold, close remaining contactor.\n Allow for bidirectional flow\n\nCharge mode:\n ChargeEn present\n No hard voltage/temperature faults\n Handle precharge and contactor closing\n  - Enable precharge and HV- (option to switch to HV+)\n  - When external message and total pack voltage are within\n       threshold, close remaining contactor.\n Once contactor cycling is complete, allow for charge only.\n\nDisplay:\n Direct control of simple display or communication to display circuit.\n Display individual/total cell data\n User selectable or external commands\n\nAllow vehicle to unlock and change all settings in master and slaves."
+					(at 0.254 -39.37 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(pin bidirectional line
+					(at 36.83 2.54 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:Master_uController"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Master uController"
+				(at 11.684 21.844 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Master_uController_0_1"
+				(rectangle
+					(start 0 20.32)
+					(end 24.13 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Master_uController_1_1"
+				(pin bidirectional line
+					(at -2.54 17.78 0)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -2.54 15.24 0)
+					(length 2.54)
+					(name "ChargerSafety"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 12.7 0)
+					(length 2.54)
+					(name "DriveEn"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 10.16 0)
+					(length 2.54)
+					(name "ChargeEn"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -2.54 7.62 0)
+					(length 2.54)
+					(name "Fault_n"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "VehicleCAN_H"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "VehicleCAN_L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "ContactorControl"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 11.43 -5.08 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 26.67 15.24 180)
+					(length 2.54)
+					(name "CAN_H"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 26.67 12.7 180)
+					(length 2.54)
+					(name "CAN_L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 26.67 10.16 180)
+					(length 2.54)
+					(name "DisplayCommo"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 26.67 7.62 180)
+					(length 2.54)
+					(name "CurrentCommo"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:PowerDistribution"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.762 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Power Distribution"
+				(at 7.62 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PowerDistribution_0_1"
+				(rectangle
+					(start 0 7.62)
+					(end 15.24 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PowerDistribution_1_1"
+				(pin power_in line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:SlaveSoftware"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 1.016 -60.96 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Slave Software"
+				(at 28.956 -61.214 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SlaveSoftware_0_1"
+				(rectangle
+					(start 0 0)
+					(end 59.69 -59.69)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SlaveSoftware_1_1"
+				(text "Cell monitor:\n Setup cell monitor circuit.\n  - Set number of cells to monitor\n  - Set all relevant settings.\n Process cell voltages.\n  - Two stage error if under/over voltage\n  - Soft error if delta exceeds threshold\n Report min/max/average/total voltage to master\nCell balancing\n Monitor cell balancing enable from master and:\n  -Initiate cell balancing if above threshold voltage\n  -Initiate cell balancing if delta threshold exceeded\n  -Override enable if hard overvoltage fault?\n  -Stop balancing when delta is below threshold\n  -Pause balancing if temperature out-of-range\nTemperature monitoring:\n Setup temperature monitoring circuit\n  - Set active temperature sensors\n  - Set relevant ADC settings (local or external?)\n Set calibration for type of sensors used.\n Process temperatures\n  - Two stage error for temperature out-of-range\n  - Error for unreliable sensor reading\n Report min/max/average temperature to master\nCurrent monitoring\n Software enable/disable\n See Master Software block for requirements\nAdditional Master tasks may be included if single module.\n "
+					(at 0.762 -30.226 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(pin bidirectional line
+					(at 26.67 2.54 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:Slave_uController"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Slave uController"
+				(at 9.652 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Slave_uController_0_1"
+				(rectangle
+					(start 0 0)
+					(end 20.32 10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Slave_uController_1_1"
+				(pin output line
+					(at -2.54 7.62 0)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -2.54 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 7.62 180)
+					(length 2.54)
+					(name "CellCommo"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 5.08 180)
+					(length 2.54)
+					(name "TempCommo"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 2.54 180)
+					(length 2.54)
+					(name "CurrentCommo"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:TemperatureMonitoring"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Temperature Monitoring"
+				(at 14.478 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TemperatureMonitoring_0_1"
+				(rectangle
+					(start 0 0)
+					(end 30.48 10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TemperatureMonitoring_1_1"
+				(pin bidirectional line
+					(at -2.54 7.62 0)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "3v3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "Communication"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 33.02 5.08 180)
+					(length 2.54)
+					(name "TempSensors"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BMS_FBD:Vehicle/Charger"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0.508 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Vehicle/Charger"
+				(at 7.874 20.828 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Vehicle/Charger_0_1"
+				(rectangle
+					(start 0 19.05)
+					(end 16.51 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Vehicle/Charger_1_1"
+				(pin power_out line
+					(at 19.05 16.51 180)
+					(length 2.54)
+					(name "12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 19.05 13.97 180)
+					(length 2.54)
+					(name "ChargerSafety"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 11.43 180)
+					(length 2.54)
+					(name "DriveEn"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 8.89 180)
+					(length 2.54)
+					(name "ChargeEn"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 19.05 6.35 180)
+					(length 2.54)
+					(name "BMSFault_n"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 19.05 3.81 180)
+					(length 2.54)
+					(name "CAN_H"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 1.27 180)
+					(length 2.54)
+					(name "CAN_L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 120.65 21.59)
+		(end 255.27 160.02)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6ab3f070-e1b1-44cb-9e5a-554ba82b4ce1)
+	)
+	(rectangle
+		(start 34.29 21.59)
+		(end 120.65 184.15)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 84571810-24b3-4034-a4a8-c64b25f954ef)
+	)
+	(text "Min 3kV isolation"
+		(exclude_from_sim no)
+		(at 133.604 27.686 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "22b47455-b33f-4d83-96b5-aae99ddf3ed4")
+	)
+	(text "Secondary Project"
+		(exclude_from_sim no)
+		(at 43.18 19.812 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "362e0f9c-eab9-42cd-bcc6-51411b6cd481")
+	)
+	(text "Note: not all applications will have a seperate 12V supply.\nInclude provisions for external power distribution."
+		(exclude_from_sim no)
+		(at 171.704 34.798 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "530a57da-dfe2-406e-ae08-b15a600f1b20")
+	)
+	(text "Alternate current sensor\nconnection for single\nmodule stand-alone."
+		(exclude_from_sim no)
+		(at 202.692 75.438 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7a7af711-3396-4464-bcff-3dedd6cb6f56")
+	)
+	(text "Primary Project"
+		(exclude_from_sim no)
+		(at 130.048 19.812 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c7a00fb2-ccfd-4ec3-a3b1-41f77cd7a665")
+	)
+	(junction
+		(at 190.5 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3dbe11e3-40cd-46c1-8f76-1b3d7a425656")
+	)
+	(junction
+		(at 214.63 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "476d2bfe-02e3-448e-89d8-a4b0118cf9f1")
+	)
+	(junction
+		(at 201.93 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49786a69-6ace-451f-84d2-77777742c4ee")
+	)
+	(junction
+		(at 214.63 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6075e512-3604-46ea-aa8a-ede5002f2380")
+	)
+	(junction
+		(at 152.4 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77f50583-bce0-46f4-bfba-e91ca940183f")
+	)
+	(junction
+		(at 99.06 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ab9564c-6103-4ecc-aa7b-4945a0b07385")
+	)
+	(junction
+		(at 99.06 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc96de5f-a792-4a75-a8d6-b654e6e879aa")
+	)
+	(junction
+		(at 58.42 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0d90285-70af-4ee3-ab31-5a3903f30180")
+	)
+	(junction
+		(at 158.75 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5b7cf6b-0c9d-4dff-91bc-abd17983719b")
+	)
+	(bus_entry
+		(at 38.1 81.28)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b34f94d1-37db-4c84-9e11-abea42035b2b")
+	)
+	(bus_entry
+		(at 38.1 83.82)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8149280-0e2b-4e86-b965-9774e5ab8d58")
+	)
+	(bus_entry
+		(at 57.15 80.01)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7696d3a-667f-4e17-b099-b6974eb9474e")
+	)
+	(bus_entry
+		(at 38.1 86.36)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0111010-3283-40a9-adea-9f5f06b7e832")
+	)
+	(wire
+		(pts
+			(xy 92.71 88.9) (xy 190.5 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00bec6af-5f1f-43aa-ae04-a4aecb00ac14")
+	)
+	(wire
+		(pts
+			(xy 33.02 67.31) (xy 60.96 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04754329-dd60-4c46-b165-23572189a280")
+	)
+	(wire
+		(pts
+			(xy 95.25 67.31) (xy 90.17 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "056e3f6f-163a-4d1a-8114-7ba83240e0af")
+	)
+	(wire
+		(pts
+			(xy 58.42 49.53) (xy 99.06 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08588481-31f5-47be-92c0-ea04bc2faeea")
+	)
+	(bus
+		(pts
+			(xy 38.1 80.01) (xy 57.15 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "096b1633-230e-422c-a458-b44764bcce5d")
+	)
+	(wire
+		(pts
+			(xy 162.56 59.69) (xy 158.75 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09a6e3b4-6856-4a8c-b93b-3172456f1842")
+	)
+	(bus
+		(pts
+			(xy 38.1 81.28) (xy 38.1 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bc9fb39-4a6e-47f9-b9a3-ea69b4fd0f76")
+	)
+	(wire
+		(pts
+			(xy 33.02 59.69) (xy 35.56 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e3ec925-cdd5-47e3-be9e-29f084ee2cb6")
+	)
+	(wire
+		(pts
+			(xy 214.63 64.77) (xy 214.63 81.28)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "14e23c4f-7abf-4c0f-a98a-74785c786e0c")
+	)
+	(polyline
+		(pts
+			(xy 133.35 30.48) (xy 133.35 77.47)
+		)
+		(stroke
+			(width 0.508)
+			(type dot)
+			(color 255 153 0 1)
+		)
+		(uuid "16f60472-8ab3-4971-8d13-1dd82e126d9e")
+	)
+	(wire
+		(pts
+			(xy 143.51 46.99) (xy 198.12 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18734d6d-31c9-44b0-b2e8-04005d3a1c0f")
+	)
+	(wire
+		(pts
+			(xy 99.06 81.28) (xy 99.06 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a2f36d4-39a2-4ffa-ab57-5a95234340a4")
+	)
+	(wire
+		(pts
+			(xy 57.15 46.99) (xy 121.92 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a543a2a-2342-4d95-942c-2467f80d1dce")
+	)
+	(wire
+		(pts
+			(xy 95.25 67.31) (xy 95.25 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b2a921a-c267-466e-99f7-af8e39211599")
+	)
+	(wire
+		(pts
+			(xy 35.56 46.99) (xy 36.83 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21d787fb-79bd-476e-9235-682961996c82")
+	)
+	(wire
+		(pts
+			(xy 90.17 64.77) (xy 123.19 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25ffdfc0-748d-42e1-a2ca-6312b5947d19")
+	)
+	(wire
+		(pts
+			(xy 198.12 46.99) (xy 198.12 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28d239a5-8c74-4c06-ae69-460ac24baad5")
+	)
+	(wire
+		(pts
+			(xy 259.08 50.8) (xy 259.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29cb68de-94f2-42ba-93f3-07cf854d44e6")
+	)
+	(wire
+		(pts
+			(xy 187.96 62.23) (xy 194.31 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c3a2d71-d880-4f25-9133-49dc358d6fbe")
+	)
+	(wire
+		(pts
+			(xy 33.02 64.77) (xy 60.96 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3687ae1c-464b-48ae-838b-ee780a620349")
+	)
+	(wire
+		(pts
+			(xy 217.17 64.77) (xy 214.63 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36ac9a60-decb-4986-857f-bdc964be6b66")
+	)
+	(wire
+		(pts
+			(xy 158.75 44.45) (xy 201.93 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bc68f7e-ff6e-487a-a2fe-1ee95875bccc")
+	)
+	(wire
+		(pts
+			(xy 143.51 44.45) (xy 152.4 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ed5d4bb-2e4d-4316-9f9a-ce7c86b571b1")
+	)
+	(wire
+		(pts
+			(xy 143.51 62.23) (xy 162.56 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "485b107e-7d4c-42d9-ad8d-191d84c46a3e")
+	)
+	(wire
+		(pts
+			(xy 201.93 64.77) (xy 214.63 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "485b3f72-6d70-43c3-beab-d13b3e2fc475")
+	)
+	(wire
+		(pts
+			(xy 264.16 50.8) (xy 259.08 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48b92de9-22f7-4008-8bc9-0a0f44766fe6")
+	)
+	(wire
+		(pts
+			(xy 33.02 74.93) (xy 60.96 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f3e6708-aa27-418a-9011-2b253615b671")
+	)
+	(wire
+		(pts
+			(xy 262.89 81.28) (xy 214.63 81.28)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "51b431b9-63f4-4646-9855-898c05450efb")
+	)
+	(wire
+		(pts
+			(xy 190.5 64.77) (xy 190.5 83.82)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "580b4114-0a0a-406e-94b4-87457ebc2c2d")
+	)
+	(wire
+		(pts
+			(xy 194.31 62.23) (xy 194.31 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf126d7-c89d-4f15-bc08-49d72fb69d7b")
+	)
+	(wire
+		(pts
+			(xy 205.74 59.69) (xy 187.96 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f8a1860-51a0-4c3b-a69e-a028d34b511f")
+	)
+	(wire
+		(pts
+			(xy 201.93 64.77) (xy 214.63 64.77)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "658474a5-0269-4e04-89b2-959ad6491da6")
+	)
+	(wire
+		(pts
+			(xy 250.19 48.26) (xy 264.16 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e842c1f-3477-4028-9ec0-3444f44c7672")
+	)
+	(wire
+		(pts
+			(xy 194.31 69.85) (xy 217.17 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f588e63-5bb2-4993-9584-5eca98480795")
+	)
+	(wire
+		(pts
+			(xy 99.06 72.39) (xy 99.06 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "707f7e94-d926-4dc0-94e9-4e66b07b3923")
+	)
+	(wire
+		(pts
+			(xy 198.12 67.31) (xy 217.17 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7225c248-d8d8-43d4-b061-431c35b35285")
+	)
+	(wire
+		(pts
+			(xy 60.96 59.69) (xy 58.42 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b645bee-6659-4f5a-9c9d-65687333fc7a")
+	)
+	(wire
+		(pts
+			(xy 158.75 44.45) (xy 158.75 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca5599d-199a-4214-a3fd-e3d7d5133c09")
+	)
+	(wire
+		(pts
+			(xy 90.17 69.85) (xy 92.71 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e6073bd-07ae-4100-8996-77d4d6db4234")
+	)
+	(wire
+		(pts
+			(xy 152.4 44.45) (xy 158.75 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8292545f-5686-44d3-bf3e-23a6d0ce79e5")
+	)
+	(wire
+		(pts
+			(xy 190.5 83.82) (xy 190.5 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "832dc6cd-8450-4e68-8a56-aedecf691654")
+	)
+	(wire
+		(pts
+			(xy 59.69 77.47) (xy 60.96 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87a4065e-1a19-4ab8-ba83-2ce88c8d51cb")
+	)
+	(wire
+		(pts
+			(xy 99.06 49.53) (xy 99.06 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d6d9a4-7c40-49e2-a679-4c81135eb522")
+	)
+	(wire
+		(pts
+			(xy 35.56 59.69) (xy 35.56 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aa5659c-78f0-432e-90b4-c53c1c705ab1")
+	)
+	(wire
+		(pts
+			(xy 152.4 59.69) (xy 152.4 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c4fb088-223e-4278-b7c9-1e1138b6fc4d")
+	)
+	(wire
+		(pts
+			(xy 74.93 82.55) (xy 74.93 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "a14819a7-89a0-4666-8e52-f7c4690e40b3")
+	)
+	(wire
+		(pts
+			(xy 143.51 59.69) (xy 152.4 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6f0b1f8-808a-446c-8f5e-e75de6f6f51e")
+	)
+	(wire
+		(pts
+			(xy 33.02 86.36) (xy 35.56 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a87bdccd-f3a8-49cc-aa72-c0e2af697b4d")
+	)
+	(wire
+		(pts
+			(xy 259.08 67.31) (xy 252.73 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b22c0f9c-438f-47b8-85b7-34a5ea7fc5a3")
+	)
+	(wire
+		(pts
+			(xy 35.56 88.9) (xy 33.02 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b261f320-2357-4a56-bb13-58638f8f1496")
+	)
+	(wire
+		(pts
+			(xy 100.33 81.28) (xy 99.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2bca347-4a28-4540-a06b-356e358ea923")
+	)
+	(wire
+		(pts
+			(xy 205.74 48.26) (xy 205.74 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b42ee745-fa0f-49ef-b50c-78b562656d9a")
+	)
+	(wire
+		(pts
+			(xy 58.42 49.53) (xy 58.42 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4e6ab6d-c292-4463-986d-4d9bb53d51a8")
+	)
+	(wire
+		(pts
+			(xy 95.25 83.82) (xy 100.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbf406b1-0be5-48ae-8708-6210018415a9")
+	)
+	(wire
+		(pts
+			(xy 92.71 69.85) (xy 92.71 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd7c2370-7bed-4628-a29c-0ffc929add66")
+	)
+	(wire
+		(pts
+			(xy 125.73 81.28) (xy 214.63 81.28)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "c2210c64-19a5-4ae7-a385-437038a6a6a3")
+	)
+	(wire
+		(pts
+			(xy 90.17 62.23) (xy 123.19 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3c03d21-feca-402d-8ef0-b7f8cb13cf83")
+	)
+	(wire
+		(pts
+			(xy 190.5 83.82) (xy 262.89 83.82)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "c6297463-f70d-4e49-9ba9-ed966866c0b9")
+	)
+	(bus
+		(pts
+			(xy 38.1 83.82) (xy 38.1 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8482a1d-bd49-496b-8a81-78368080aa01")
+	)
+	(wire
+		(pts
+			(xy 33.02 83.82) (xy 35.56 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2b5e3fe-981d-4218-9d42-f3b9943b2b55")
+	)
+	(wire
+		(pts
+			(xy 175.26 69.85) (xy 175.26 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "d2bcf508-babe-4c54-b0db-70b0949bb06c")
+	)
+	(wire
+		(pts
+			(xy 218.44 48.26) (xy 205.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daea7d75-4aeb-43ce-b88b-66d019b260ea")
+	)
+	(wire
+		(pts
+			(xy 33.02 62.23) (xy 60.96 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db776958-8233-488d-813d-a1c3156386c8")
+	)
+	(wire
+		(pts
+			(xy 187.96 64.77) (xy 190.5 64.77)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "dd50519c-59d3-47bf-b17e-4af8a6e0d0f0")
+	)
+	(wire
+		(pts
+			(xy 125.73 81.28) (xy 125.73 72.39)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "ec6d408d-e55f-4872-b90e-e93a9968569d")
+	)
+	(wire
+		(pts
+			(xy 99.06 59.69) (xy 123.19 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecb2fe70-b8f1-4785-8307-236a41af7076")
+	)
+	(wire
+		(pts
+			(xy 143.51 64.77) (xy 162.56 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecda6339-99df-4ca8-be41-e16f56fdf5d1")
+	)
+	(wire
+		(pts
+			(xy 57.15 49.53) (xy 58.42 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee5c3a49-dd36-46d3-950c-e878dc6efed7")
+	)
+	(wire
+		(pts
+			(xy 33.02 72.39) (xy 60.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee78f4dc-4430-4c45-9bdd-da2e6058e492")
+	)
+	(bus
+		(pts
+			(xy 38.1 81.28) (xy 38.1 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb8c6d7-e6cd-4920-a56c-abc28c53d880")
+	)
+	(wire
+		(pts
+			(xy 201.93 44.45) (xy 218.44 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd8b9bc-a101-4eca-b1d2-986ece292cfe")
+	)
+	(wire
+		(pts
+			(xy 125.73 72.39) (xy 99.06 72.39)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "f0e30bc6-2972-4eb4-9bc1-d2b4f889224f")
+	)
+	(wire
+		(pts
+			(xy 33.02 69.85) (xy 60.96 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fba9fc41-3db5-4a44-9984-411106a7fc5d")
+	)
+	(wire
+		(pts
+			(xy 201.93 64.77) (xy 201.93 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffe59dc5-f3fd-427f-a873-750a23d467b1")
+	)
+	(symbol
+		(lib_id "BMS_FBD:SlaveSoftware")
+		(at 148.59 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e700009-695b-4ebc-aade-0f04c0dd9f55")
+		(property "Reference" "S1"
+			(at 209.55 123.9161 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Slave Software"
+			(at 209.55 126.4561 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "06b3ed20-6c6c-478c-8cdd-8238efb1da6a")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:CurrentSensor")
+		(at 265.43 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11d6bd63-28d5-4612-8b75-5031119db975")
+		(property "Reference" "H7"
+			(at 265.43 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Current Sensor"
+			(at 266.7 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "9822ad34-9861-403d-b443-1e9a44cc86b3")
+		)
+		(pin ""
+			(uuid "52481765-3a23-41b0-b000-09a5a5a296cc")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:MasterSoftware")
+		(at 38.1 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "473fbb4b-2e19-4058-a2d2-2ae08c87c776")
+		(property "Reference" "S2"
+			(at 38.608 179.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Master Software"
+			(at 65.024 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "acf9b1ae-950d-4753-aa27-52ebbf6d8e81")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:PowerDistribution")
+		(at 39.37 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57a883eb-44c9-4528-b5dd-c83bfb6f1512")
+		(property "Reference" "H9"
+			(at 40.64 53.594 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Power Distribution"
+			(at 46.99 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 39.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "a14fcdda-3ac2-4967-8516-79bea9f0d1b2")
+		)
+		(pin ""
+			(uuid "dfacb609-4b36-4284-9f0f-f3736663cabf")
+		)
+		(pin ""
+			(uuid "60f0aeb5-7eaf-437b-be49-344bec6bfa51")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:Vehicle/Charger")
+		(at 13.97 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68be175d-2ff4-45f4-bbee-5c0de2e8dd25")
+		(property "Reference" "H11"
+			(at 15.748 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Vehicle/Charger"
+			(at 22.098 55.372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 13.97 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 13.97 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 13.97 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "b3d1bc42-b046-413e-b79d-587a87efcaa0")
+		)
+		(pin ""
+			(uuid "320074f5-e0c0-49e3-8f0d-9c69f7df073e")
+		)
+		(pin ""
+			(uuid "e5566ae8-645e-47e3-a4b7-4febb23d90b8")
+		)
+		(pin ""
+			(uuid "d25eede6-7b09-47e7-8a66-514b4fefbf50")
+		)
+		(pin ""
+			(uuid "64f7d801-5057-4120-adb8-0344f05b1b3a")
+		)
+		(pin ""
+			(uuid "98ff621f-1b91-4993-af1d-a77a81aadc14")
+		)
+		(pin ""
+			(uuid "e246e790-15cb-43b5-b8d3-70f1c30a543d")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:Master_uController")
+		(at 63.5 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73ac91fd-c29c-4021-9443-dae08a532f94")
+		(property "Reference" "H8"
+			(at 64.77 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Master uController"
+			(at 75.565 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "a10f005b-a72d-4563-b601-c5d542aa1ad4")
+		)
+		(pin ""
+			(uuid "6ddea4c3-5552-4a9c-bcc7-579ced3d828a")
+		)
+		(pin ""
+			(uuid "da919860-915c-4920-b3aa-f3a05c7403ee")
+		)
+		(pin ""
+			(uuid "fef5df5b-c906-433b-bd9d-8ea267d660f4")
+		)
+		(pin ""
+			(uuid "3199ca7b-afd3-4593-bf76-2fbc24d25710")
+		)
+		(pin ""
+			(uuid "78f8f805-3b7c-4dd8-acc9-546185125c5d")
+		)
+		(pin ""
+			(uuid "59bafc2c-1d52-43aa-a252-28c811b2aafe")
+		)
+		(pin ""
+			(uuid "61b572a5-1f5d-4134-91d7-92205468de82")
+		)
+		(pin ""
+			(uuid "7ec51d40-fb5b-4538-8859-3b864794a870")
+		)
+		(pin ""
+			(uuid "3140ead7-aa15-4b67-9a04-2aa7c9e0ec3c")
+		)
+		(pin ""
+			(uuid "c3b27667-734d-4644-85fd-5986c1ac3783")
+		)
+		(pin ""
+			(uuid "f24a0a88-53b7-4823-a1d0-c8e95293337f")
+		)
+		(pin ""
+			(uuid "bec1c57a-84ca-43dd-8d15-0588ed9e7602")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:BatteryModule")
+		(at 266.7 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7cc7240c-0117-420a-9792-ed2cf526b58f")
+		(property "Reference" "H6"
+			(at 266.7 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery Module"
+			(at 267.208 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 266.7 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "74eb1c36-2b50-4b98-b760-f4277141b1e5")
+		)
+		(pin ""
+			(uuid "3ea7cba8-6825-4f66-8899-c28c78337e01")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:Contactors")
+		(at 15.24 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d9196f8-ade6-4f7d-a27e-41eb6fd769c6")
+		(property "Reference" "H12"
+			(at 17.018 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Contactors"
+			(at 23.114 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.24 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.24 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 15.24 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "4cf8eed1-95b5-4ed6-ba97-2a7a00ea781f")
+		)
+		(pin ""
+			(uuid "76de252d-d48b-497d-baf9-5bd78afcb9f4")
+		)
+		(pin ""
+			(uuid "f8ec04e6-9709-4a55-ad80-5323868c5df4")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:IsolatedCANTransducer")
+		(at 125.73 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9090c524-6e46-4af9-9719-d2db1fd2a2a8")
+		(property "Reference" "H3"
+			(at 127 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Isolated CAN Transducer"
+			(at 133.35 55.372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "c636f2b2-cc72-4f66-95b9-32044504f9eb")
+		)
+		(pin ""
+			(uuid "28bf46ab-bc89-405f-84bd-a8426cd8afb5")
+		)
+		(pin ""
+			(uuid "e887c5ae-4ed5-4374-8031-d45749dcfa35")
+		)
+		(pin ""
+			(uuid "e9523cdf-962a-4f9a-a7a7-fa7c30587d5f")
+		)
+		(pin ""
+			(uuid "7da7e7fb-a4c0-4657-bc10-fc1b89b81a20")
+		)
+		(pin ""
+			(uuid "3f72ac70-4882-4471-bb06-4ad3a944ae97")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:CellMonitor&Balancing")
+		(at 220.98 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93b0e5d7-9cce-4b4d-9ba0-093c3d2df0a9")
+		(property "Reference" "H4"
+			(at 222.504 53.594 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Cell Monitoring & Balancing"
+			(at 234.315 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "d580f8e5-89f1-421b-acfd-1e7bea309e1a")
+		)
+		(pin ""
+			(uuid "1b39f682-a0c5-4e32-8c26-921381932a9c")
+		)
+		(pin ""
+			(uuid "93cfde1d-f01a-4cc0-9eed-2fd946137d4b")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:TemperatureMonitoring")
+		(at 219.71 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af1135ab-49ab-4a04-8504-fe1eecca3bcc")
+		(property "Reference" "H5"
+			(at 221.234 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Temperature Monitoring"
+			(at 234.95 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "8fc64ee0-24df-4110-a38a-cd60b2459423")
+		)
+		(pin ""
+			(uuid "5f82e26f-9f40-4a32-8ac4-73992ae92205")
+		)
+		(pin ""
+			(uuid "e3f9640e-532a-4d44-b457-f8e113142666")
+		)
+		(pin ""
+			(uuid "631ed78c-96b1-4bf7-a9c7-a3eab61192af")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:Slave_uController")
+		(at 165.1 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf6bf20a-acbc-4e4c-940d-0022cefc1616")
+		(property "Reference" "H1"
+			(at 166.624 68.834 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Slave uController"
+			(at 175.26 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "fc319162-f7f2-47f5-b372-10f6c1ae1a50")
+		)
+		(pin ""
+			(uuid "da61e727-1b44-4055-83bc-6abdfcd2af89")
+		)
+		(pin ""
+			(uuid "2c2d673d-f3a7-40dc-b611-82b866659127")
+		)
+		(pin ""
+			(uuid "ca7c2335-a555-44a8-b985-8f3593093e42")
+		)
+		(pin ""
+			(uuid "0b90693b-b12f-445f-a633-c95b81248a32")
+		)
+		(pin ""
+			(uuid "6bf3e189-f8ff-4830-b4ff-fc9ee925dea9")
+		)
+		(pin ""
+			(uuid "a8d0d843-0016-4e18-83f8-f2478d300602")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:IsolatedPowerDistribution")
+		(at 124.46 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3d80a2f-04af-49da-bcd8-dd9a9079a0a9")
+		(property "Reference" "H2"
+			(at 125.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Isolated Power Distribution"
+			(at 132.715 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "a3f8d4d3-8310-463f-b1e6-dd2a07510c31")
+		)
+		(pin ""
+			(uuid "d021a62e-0dcb-4436-8e76-3d9d0d670404")
+		)
+		(pin ""
+			(uuid "fadfe408-fcd1-4d6c-99d9-a7c9f43b6d5e")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BMS_FBD:Display")
+		(at 102.87 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "edf2a8f1-05b1-4637-b587-2ee587b95620")
+		(property "Reference" "H10"
+			(at 102.87 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Display"
+			(at 107.95 77.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "1729b3f9-d781-4156-b3ab-9de3a0fbf553")
+		)
+		(pin ""
+			(uuid "57f89f49-342e-470f-b7fc-d17529994643")
+		)
+		(instances
+			(project ""
+				(path "/233eb9a0-481f-49b4-bb61-c69ab2cc3021"
+					(reference "H10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
